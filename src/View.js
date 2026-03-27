@@ -2,6 +2,7 @@ import Button from "@mui/material/Button";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
+const API = import.meta.env.BACKEND_API_URL;
 
 export default function View() {
   const [result, setResult] = useState([]);
@@ -12,7 +13,7 @@ export default function View() {
     const fetchResponse = async () => {
       try {
         setLoading(true);
-        const response = await axios.get("http://localhost:5000/api/get");
+        const response = await axios.get(`${API}/api/get`);
 
         if (response.status === 200) {
           setResult(response.data);

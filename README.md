@@ -170,7 +170,7 @@ GET /api/get
 
 * Import to vercel.com
 
-* Set VITE_API_URL=https://your-backend.onrender.com/api
+* Set VITE_API_URL=https://ai-flow-backend-18p7.onrender.com/
 
 * Deploy
 

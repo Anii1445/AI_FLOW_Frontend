@@ -11,6 +11,7 @@ import { toast } from 'react-toastify';
 import { FaStopCircle } from "react-icons/fa";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
+const API = import.meta.env.BACKEND_API_URL;
 
 const initialEdges = [
   { id: "e1-2", source: "1", target: "2" },
@@ -48,7 +49,7 @@ function Home() {
   const runFlow = async () => {
     try {
       setLoading(true);
-      const res = await axios.post("http://localhost:5000/api/ask-ai", {
+      const res = await axios.post(`${API}/api/ask-ai`, {
         prompt,
       });
 
@@ -73,7 +74,7 @@ function Home() {
   const save = async() => {
     try {
       setSaveLoading(true);
-      const res = await axios.post("http://localhost:5000/api/add",{
+      const res = await axios.post(`${API}/api/add`,{
         prompt: prompt,
         AI_response: response
       });
