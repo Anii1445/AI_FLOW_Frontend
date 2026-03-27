@@ -11,6 +11,7 @@ import { toast } from 'react-toastify';
 import { FaStopCircle } from "react-icons/fa";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
+import { FaEye } from "react-icons/fa6";
 const API = import.meta.env.BACKEND_API_URL;
 
 const initialEdges = [
@@ -120,7 +121,7 @@ function Home() {
         variant="contained"
         onClick={() => { navigate("/view") }}
         style={{ position: "absolute", top: 610, left: 905, zIndex: 10 }}
-        endIcon={saveLoading ? <AiOutlineLoading3Quarters/> : <IoSave />}
+        endIcon={<FaEye/>}
       >
         Show All Search
       </Button>
