@@ -2,7 +2,7 @@ import Button from "@mui/material/Button";
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
-const API = import.meta.env.BACKEND_API_URL;
+const API = process.env.REACT_APP_BACKEND_API_URL;
 
 export default function View() {
   const [result, setResult] = useState([]);

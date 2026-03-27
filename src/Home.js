@@ -12,7 +12,8 @@ import { FaStopCircle } from "react-icons/fa";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import { useNavigate } from "react-router-dom";
 import { FaEye } from "react-icons/fa6";
-const API = import.meta.env.BACKEND_API_URL;
+const API = process.env.REACT_APP_BACKEND_API_URL;
+
 
 const initialEdges = [
   { id: "e1-2", source: "1", target: "2" },
