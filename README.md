@@ -165,15 +165,25 @@ GET /api/get
 🚀 Deployment
 
 Frontend → Vercel
+
 Push frontend/ to GitHub
+
 Import to vercel.com
+
 Set VITE_API_URL=https://your-backend.onrender.com/api
+
 Deploy
 
 Backend → Render
+
 Push backend/ to GitHub
+
 Create new Web Service on render.com
+
 Build command: npm install
+
 Start command: npm start
+
 Add all environment variables from .env.example
+
 Deploy
