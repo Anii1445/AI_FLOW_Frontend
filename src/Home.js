@@ -14,7 +14,7 @@ import { useNavigate } from "react-router-dom";
 import { FaEye } from "react-icons/fa6";
 const API = process.env.REACT_APP_BACKEND_API_URL;
 
-
+console.log(API)
 const initialEdges = [
   { id: "e1-2", source: "1", target: "2" },
 ];
